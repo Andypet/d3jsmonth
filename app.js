@@ -21,6 +21,13 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(function (req, res, next) {  
+    res.renderView = function (viewName, viewModel) {
+        res.render(viewName + req.xhr ? null : '_full', viewModel);
+        next();
+    };
+});
+
 app.use('/', routes);
 app.use('/users', users);
 
