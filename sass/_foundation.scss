@@ -4,6 +4,7 @@
 
 // Make sure the charset is set appropriately
 @charset "UTF-8";
+$topbar-height: 80px;
 // Behold, here are all the Foundation components.
 @import
   "foundation/components/grid",
@@ -30,11 +31,11 @@
   "foundation/components/forms",
   "foundation/components/visibility";
   // "foundation/components/progress-bars",
+  // "foundation/components/side-nav",
   // "foundation/components/thumbs",
   // "foundation/components/tables",
   // "foundation/components/joyride",
   // "foundation/components/tooltips",
-  // "foundation/components/side-nav",
   // "foundation/components/orbit",
   // "foundation/components/alert-boxes",
   // "foundation/components/breadcrumbs",
