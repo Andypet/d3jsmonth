@@ -5708,5 +5708,16 @@ th.hide-for-touch {
 }
 .secondary-nav {
   background-color: red;
-  height: 30px;
+  height: 180px;
+}
+.secondary-nav div {
+  margin-top: 20px;
+}
+
+section.page {
+  height: 500px;
+  background-color: blue;
+}
+section.page#secondItem {
+  background-color: green;
 }

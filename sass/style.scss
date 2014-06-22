@@ -13,5 +13,16 @@ $top-font-size: 2em;
 
 .secondary-nav{
   background-color: red;
-  height:30px;
+  height: 180px;
+  div{
+    margin-top: 20px;
+  }
+}
+
+section.page{
+  height: 500px;
+  background-color: blue;
+  &#secondItem{
+    background-color: green;
+  }
 }

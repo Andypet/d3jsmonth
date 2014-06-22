@@ -6,9 +6,11 @@ html
     link(rel='shortcut icon', async, href='images/favicon.ico', type='image/x-icon')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+
+    include ./partials/navigation
+    
     block content
     
-    include ./partials/navigation
     
     script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
     script(type="text/javascript" defer src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js")
