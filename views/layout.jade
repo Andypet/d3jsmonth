@@ -12,17 +12,12 @@ html
     block content
     
     
-    script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    script(type="text/javascript" defer src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js")
+    script(type="text/javascript",defer,src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(type="text/javascript").
+      window.jQuery || document.write("<script src='/javascripts/jquery-2.1.1.min.js'><\/script>");
+    script(type="text/javascript",defer,src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js")
     script(type="text/javascript").
       $(document).ready(function(){
         $(document).foundation();
-        $('a.hijax').click(function (e) {
-          e.preventDefault(); // Stop browser from loading the URL.
-          $.ajax({
-            url: $(this).attr('href'),
-          }).done(function (markup) {
-            $('#content').html(markup);
-          });
-        });        
-      })
+      });
+    script(type="text/javascript",defer,src="/javascripts/scripts.js")
