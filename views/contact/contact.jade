@@ -1,0 +1,85 @@
+#contactPage
+  .contactFooter
+    .row
+      .medium-3.columns
+        .row.details
+          h1.text-center Other Ways
+          .row
+            .small-3.columns
+              label.right.inline(for='right-label') phone:
+            .small-9.columns
+              a(href="tel:18082652545") 808.265.2545
+          .row
+            .small-3.columns
+              label.right.inline(for='right-label') Email: 
+            .small-9.columns
+              a(href="mailto:kingtak.w@gmail.com") kingtak.w@gmail
+          .row
+            .small-3.columns
+              label.right.inline(for='right-label') Skype: 
+            .small-9.columns
+              a(href="skype:k.just.wong") k.just.wong
+      .medium-9.columns
+        form.smallForm(data-abide,method="post",action="")#ajax-contact
+          fieldset
+            legend Contact me
+            .row
+              .columns
+                a.button.tiny.btn.right#more Want more options?
+            .row
+              .medium-6.columns
+                .name-field
+                  label.inline(for='name') Name
+                  input#name(type='text',name='name')
+                  small.error Please provide a name
+
+              .medium-6.columns
+                .email-field
+                  label.inline(for='email') Email
+                  input#email(type='email',name="email",placeholder='e.g. youremail@gmail.com')
+                  small.error A correct type of email is required
+            .row.hiddenFields
+              .medium-6.columns
+                .name-field
+                  label.inline(for='phone') Phone Number
+                  input#phone(type='text',name="phone") 
+
+                  small.error Please put numerical range
+
+              .medium-6.columns
+                .timeline-field
+                  label.inline(for='time') Timeline
+                  input#timeline(type='text',name="timeline",placeholder='when is it due?')
+            
+            .row.hiddenFields
+              .medium-6.columns
+                .budget-field
+                  label.inline(for='budget') Budget
+                  select(name="budget")
+                    option(value="not known",name="budget") Not Sure / Rather Not Say
+                    option(value="low",name="budget") $200-$599
+                    option(value="high",name="budget") $600-$999
+                    option(value="very_high",name="budget") $1000-$1500
+                    option(value="elite",name="budget") $1600-$1999
+                    option(value="ballin",name="budget") $2000+
+              .medium-6.columns
+                .email-field
+                  label.inline(for='quote') Quote by
+                  select(name="quote")
+                    option(value="N/A",name="quote") Not Applicable
+                    option(value="thirty days",name="quote") 30 Days
+                    option(value="fifteen days",name="quote") 15 Days
+                    option(value="seven days",name="quote") 7 Days
+                    option(value="five days",name="quote") 3 Days                                              
+            .row
+              .columns
+                .description-field
+                  label.inline(for='message') Message
+                  textarea#message(type='text',rows="15",name="message",placeholder='A short description of your request')
+            div
+              input(type="hidden",name="name2",id="name2")
+              input(type="hidden",name="script",id="script")
+              input(type="hidden",name="_csrf",value="#{_csrf}")
+            .row#submitContact
+              .columns
+                button.contactSubmit.right(type="submit") Submit

@@ -5706,6 +5706,10 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px !important;
+}
+
 .secondary-nav {
   background-color: red;
   height: 180px;
@@ -5720,4 +5724,89 @@ section.page {
 }
 section.page#secondItem {
   background-color: green;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+/* Slide 1 */
+#slide-1 .bcg {
+  background-image: url("/images/bcg_slide-1.jpg");
+}
+
+/* Slide 3 */
+#slide-3 .bcg {
+  background-image: url("/images/bcg_slide-3.jpg");
+}
+
+section#slide-1 {
+  height: 800px;
+}
+section#slide-2 .bcg {
+  background: none;
+  height: 310px;
+  text-align: center;
+}
+
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hsContent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ebebeb;
+  padding: 0 8%;
+  text-align: center;
+}
+.hsContent p {
+  width: 400px;
+  margin: 0 auto;
+  color: #b2b2b2;
+}
+.hsContent a {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
+
+.bgBlack {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 3px 10px;
+}
+
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#contactPage {
+  color: black;
+}
+#contactPage .contactFooter .row div .hiddenFields {
+  display: none;
+}
+#contactPage .contactFooter .row div h1 {
+  padding: 10px;
+}
+#contactPage .contactFooter .row div .details {
+  padding: 5px;
+  border: 1px solid #000000;
+  position: relative;
+  top: 38px;
+  color: black;
+}
+#contactPage .contactFooter .row div .details a, #contactPage .contactFooter .row div .details p {
+  color: inherit;
+  line-height: 33px;
 }

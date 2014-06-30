@@ -16,8 +16,10 @@ html
     script(type="text/javascript").
       window.jQuery || document.write("<script src='/javascripts/jquery-2.1.1.min.js'><\/script>");
     script(type="text/javascript",defer,src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js")
+    
+    block scripts
+      
     script(type="text/javascript").
       $(document).ready(function(){
         $(document).foundation();
       });
-    script(type="text/javascript",defer,src="/javascripts/scripts.js")
