@@ -18,23 +18,21 @@ var nodemailer = require('nodemailer');
 var express = require('express');
 var router = express.Router();
 
-router.get("/send", function(req, res){
-  var params = req.params.all();
-  if(!params.name){
+router.post("/send", function(req, res){
+  console.log("sending a scripppt");
+    console.log(req.body);
+  var params = req.body;
+  console.log(params);
+
+  if(!params.email){
     res.send(500);
   }
-
-  // if(!params.subject){
-  //   res.send(500);
-  // }
-
-  // if(!params.message){
-  //   res.send(500);
-  // }
   var msg = [];
   msg = 'Someone Has Contact You From the Website!\n';
   msg += '------------------------------------------\n';
-  msg += 'Name: ' + params.name + '\n';
+  if(params.name){
+    msg += 'Name: ' + params.name + '\n';
+  }
 
   if(params.email){
     msg += 'Email: ' + params.email + '\n';
@@ -44,7 +42,7 @@ router.get("/send", function(req, res){
     msg += 'Phone Number: ' + params.phone + '\n';
   }
 
-  msg += 'Subject: Someone has contacted you from kingtak.us \n';
+  msg += 'Subject: Someone has contacted you from D3js.kingtak.us \n';
   msg += 'Message: \n';
   msg += params.message + '\n';
 

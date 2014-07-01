@@ -17,6 +17,7 @@
     "d3": "~3.4.8",
     "jquery": "~2.1.1",
     "skrollr": "~0.6.26",
-    "nodemailer": "~0.7.0"
+    "nodemailer": "~0.7.0",
+    "browserjs": "~0.1.21"
   }
 }
