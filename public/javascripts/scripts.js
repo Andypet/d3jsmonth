@@ -10,7 +10,7 @@ $(document).ready(function(){
     $.ajax({
       url: "/" + $(this).attr('href'),
     }).done(function (markup) {
-      $('#skrollr-body').html(markup);
+      $('#content').html(markup);
     });
   });
 
@@ -24,13 +24,6 @@ $(document).ready(function(){
       }
     }
   });
-
-  $("nav.top-bar").on("click", function(){
-    $(document).scrollTop(100);
-  });
-
-
-
 
   function drawingHawaii(){
 

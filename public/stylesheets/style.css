@@ -5743,7 +5743,8 @@ section#first-d3 .state {
 }
 
 #aboutPage {
-  padding: 30px;
+  padding: 20px;
+  margin-top: 30px;
 }
 #aboutPage h1 {
   margin-bottom: 30px;
@@ -5817,6 +5818,7 @@ section#slide-2 .bcg {
 }
 
 #contactPage {
+  margin-top: 30px;
   color: black;
 }
 #contactPage .contactFooter .row div .hiddenFields {

@@ -8,18 +8,23 @@ html
   body
 
     include ./partials/navigation
-    
-    block content
-    
-    
-    script(type="text/javascript",defer,src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-    script(type="text/javascript").
-      window.jQuery || document.write("<script src='/javascripts/jquery-2.1.1.min.js'><\/script>");
-    script(type="text/javascript",defer,src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js")
-    
-    block scripts
+
+    #content
+      block content
       
+      
+      script(defer,src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+      script(defer,src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js")
+      
+      block scripts
+      
+    script().
+      window.jQuery || document.write("<script src='/javascripts/jquery-2.1.1.min.js'><\/script>");
     script(type="text/javascript").
       $(document).ready(function(){
         $(document).foundation();
+        $("nav.top-bar").on("click", function(){
+          $(document).scrollTop(100);
+        });
+
       });
