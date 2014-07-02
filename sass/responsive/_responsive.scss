@@ -1,0 +1,29 @@
+// Medium screens
+@media only screen and (min-width: 90.063em) and (max-width:120em) {
+  
+
+}
+@media only screen and (min-width: 40em) and (max-width:60em) {
+  
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40em) and (max-width: 45em) {
+
+}
+@media only screen and (min-width: 35em) and (max-width: 40em) { 
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 19em) and (max-width:35em){
+  .contactFooter{
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width:19em) and (max-width: 20em){
+}
+
+@media only screen and (max-width: 19em){
+
+  .form-signin{
+    width: 90%;
+  }
+}

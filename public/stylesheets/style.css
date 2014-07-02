@@ -5836,3 +5836,16 @@ section#slide-2 .bcg {
   color: inherit;
   line-height: 33px;
 }
+
+/* min-width 641px, medium screens */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 19em) and (max-width: 35em) {
+  .contactFooter {
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 19em) {
+  .form-signin {
+    width: 90%;
+  }
+}
