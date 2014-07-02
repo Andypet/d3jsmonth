@@ -10,11 +10,14 @@ block content
           div.hsContent
             h2(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-2 h2') Welcome
             p(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-2 h2')
-              | Start scrolling down for both parralax and d3 goodness!
+              | Start scrolling down for both parallax and d3 goodness!
     section#first-d3
-
+      include ./d3code/1
 
 block scripts
   script(type="text/javascript",defer,async,src="/javascripts/skrollr.min.js")
   script(type="text/javascript",defer,async,src="/javascripts/waypoint-0.2.8.min.js")    
+  script(type="text/javascript",defer,src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js")
+  script(type="text/javascript",defer,src="http://d3js.org/topojson.v1.min.js")
+  script(type="text/javascript",defer,src="/javascripts/queue.min.js")
   script(type="text/javascript",defer,async,src="/javascripts/scripts.js")

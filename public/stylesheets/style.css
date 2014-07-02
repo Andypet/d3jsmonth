@@ -5707,11 +5707,14 @@ th.hide-for-touch {
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px !important;
+  margin: 0px;
+}
+
+body {
+  height: auto;
 }
 
 .secondary-nav {
-  background-color: red;
   height: 180px;
 }
 .secondary-nav div {
@@ -5724,6 +5727,29 @@ section.page {
 }
 section.page#secondItem {
   background-color: green;
+}
+section#first-d3 {
+  padding: 60px;
+  background-color: steelblue;
+}
+section#first-d3 .hawaiiMap {
+  height: 500px;
+}
+section#first-d3 h2 {
+  margin-bottom: 30px;
+}
+section#first-d3 .state {
+  fill: green;
+}
+
+#aboutPage {
+  padding: 30px;
+}
+#aboutPage h1 {
+  margin-bottom: 30px;
+}
+#aboutPage h3 {
+  margin-bottom: 30px;
 }
 
 /* ==========================================================================
