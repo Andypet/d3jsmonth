@@ -10,7 +10,7 @@ $(document).ready(function(){
     $.ajax({
       url: "/" + $(this).attr('href'),
     }).done(function (markup) {
-      $('#content').html(markup);
+      $('#skrollr-body').html(markup);
     });
   });
 
