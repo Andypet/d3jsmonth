@@ -5774,6 +5774,9 @@ section#slide-2 .bcg {
   height: 310px;
   text-align: center;
 }
+section#slide-2 h1, section#slide-2 h2, section#slide-2 h3, section#slide-2 h4, section#slide-2 h5, section#slide-2 h6 {
+  color: white;
+}
 
 .hsContainer {
   display: table;
